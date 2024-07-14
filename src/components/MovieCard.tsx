@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Movie } from "../types/movie";
+import { Movie } from "../types";
 import { Card, Poster, CardContent, Title, Year } from "./MovieCard.styles";
 
 function MovieCard({ movie }: { movie: Movie }) {

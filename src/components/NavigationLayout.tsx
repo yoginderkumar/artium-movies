@@ -9,10 +9,10 @@ import {
   SuggestionsList,
   Title,
 } from "./Navigation.styles";
-import useDebounce from "../hooks/useDebounce";
-import { searchMovies } from "../api/omdb";
-import { Movie } from "../types/movie";
-import { Link } from "../../node_modules/react-router-dom/dist/index";
+import {useDebounce} from "../hooks";
+import { searchMovies } from "../api";
+import { Movie } from "../types";
+import { Link } from "react-router-dom";
 
 export default function NavigationBar({
   onSearch,

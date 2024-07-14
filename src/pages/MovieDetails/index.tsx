@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getMovieDetails } from '../../api/omdb';
-import { MovieDetails } from '../../types/movie';
+import { getMovieDetails } from '../../api';
+import { MovieDetails } from '../../types';
 import {
   MovieDetailsContainer,
   PosterSection,

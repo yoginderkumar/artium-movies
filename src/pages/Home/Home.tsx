@@ -1,11 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
 import Header from '../../components/NavigationLayout';
 import MovieList from '../../components/MovieList';
-import { searchMovies } from '../../api/omdb';
-import useDebounce from '../../hooks/useDebounce';
-import useInfiniteScroll from '../../hooks/useInfiniteScroll';
+import { searchMovies } from '../../api';
+import { useDebounce, useInfiniteScroll } from '../../hooks';
 import { HomePageContainer, Footer } from './Home.styles';
-import { Movie } from '../../types/movie';
+import { Movie } from '../../types';
 
 function HomePage() {
   const [movies, setMovies] = useState<Movie[]>([]);
